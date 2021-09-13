@@ -1,12 +1,14 @@
 <template>
 	<Header />
+	<AboutMe />
 </template>
 
 <script>
-import Header from './Header.vue'
+import Header from './Header.vue';
+import AboutMe from './AboutMe.vue';
 export default {
 	components: {
-		Header,
+		Header, AboutMe
 	}
 }
 </script>

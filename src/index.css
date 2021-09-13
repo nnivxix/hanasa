@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 body {
-	font-family: 'Gelasio', serif;
+	/*font-family: 'Gelasio', serif;*/
+	font-family: 'Heebo', sans-serif;
 	
 }
