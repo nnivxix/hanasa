@@ -9,7 +9,7 @@
 		</router-link>
 
 
-		<a class="border-4 text-sm md:text-lg border-blue-500 hover:border-transparent hover:bg-blue-500 hover:text-white self-center justify-self-end p-2 md:pd-4 font-bold text-gray-800" href="/resume_adehanasa.pdf" download>Download Resume</a>
+		<a class="border-4 text-sm md:text-sm border-blue-500 hover:border-transparent hover:bg-blue-500 hover:text-white self-center justify-self-end p-2 md:pd-4 font-bold text-gray-800" href="/resume_adehanasa.pdf" download>Download Resume</a>
 	</nav>
 </template>
 
