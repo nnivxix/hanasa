@@ -1,5 +1,5 @@
 <template>
-	<section class="px-6 md:mx-6 my-10 md:mx-36 md:grid md:grid-cols-2">
+	<section class=" mx-6 md:px-0 my-10 md:mx-36 md:grid md:grid-cols-2 text-gray-900">
 		<h1 class="text-3xl md:text-4xl p-6 font-bold col-span-2 ">Selected Works</h1>
 		
 			<figure v-for="work in works" :key="work.name" class="md:w-full my-4 px-5 ">
