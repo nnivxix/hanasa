@@ -1,13 +1,13 @@
 <template>
 	<section class="px-6 md:mx-6 my-10 md:mx-36 md:grid md:grid-cols-2">
-		<h1 class="text-4xl font-bold col-span-2 ">Selected Works</h1>
+		<h1 class="text-3xl md:text-4xl p-6 font-bold col-span-2 ">Selected Works</h1>
 		
 			<figure v-for="work in works" :key="work.name" class="md:w-full my-4 px-5 ">
 				<hr>
 				<img class="md:w-max shadow-md" :src="work.img" :alt="work.name">
 				<figcaption class="mt-2">
-					<a class="text-2xl font-bold" :href="work.link" target="_blank" >{{work.name}}</a>
-					<p class="text-2xl">{{ work.description }}</p>
+					<a class="text-base text-lg font-bold" :href="work.link" target="_blank" rel="noopener" >{{work.name}}</a>
+					<p class="text-base text-lg">{{ work.description }}</p>
 				</figcaption>
 
 			</figure>
