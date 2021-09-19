@@ -1,8 +1,8 @@
 # hanasa for portfolio
 
-[x] design on Figma
-[x] research technologies 
-[ ] code
+ - [x] design on Figma
+ - [x] research technologies 
+ - [x] code
 
 ## Fonts
 - Gelasio
@@ -14,7 +14,11 @@
 |blue | #248FC7|
 
 ## Components
-[x] Navbar
-[x] Hero
-[ ] Works
-[ ] Contact
+ - [x] Navbar
+ - [x] Hero
+ - [x] Works
+ - [x] Contact
+
+
+## Next Move
+- Add modal for form

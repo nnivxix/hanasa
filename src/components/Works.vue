@@ -1,7 +1,6 @@
 <template>
 	<section class=" mx-6 md:px-0 my-10 md:mx-36 md:grid md:grid-cols-2 text-gray-900">
 		<h1 class="text-3xl md:text-4xl p-6 font-bold col-span-2 ">Selected Works</h1>
-		
 			<figure v-for="work in works" :key="work.name" class="md:w-full my-4 px-5 ">
 				<hr>
 				<img class="md:w-max shadow-md" :src="work.img" :alt="work.name">
@@ -9,13 +8,9 @@
 					<a class="text-base text-lg font-bold" :href="work.link" target="_blank" rel="noopener" >{{work.name}}</a>
 					<p class="text-base text-lg">{{ work.description }}</p>
 				</figcaption>
-
-			</figure>
-		
-		
+			</figure>		
 	</section>
 </template>
-
 <script>
 export default {
   name: 'Works',
@@ -49,7 +44,3 @@ export default {
   }),
 }
 </script>
-
-<style>
-  
-</style>
