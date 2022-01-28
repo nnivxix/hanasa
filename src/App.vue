@@ -2,26 +2,13 @@
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
 import Navbar from './components/Navbar.vue';
-import { onMounted, computed } from 'vue';
+import { computed } from 'vue';
 // import {  } from '@vue/runtime-core';
 import { useStore } from 'vuex';
 
 const store = useStore();
 const open = computed(() => store.state.open );
-// const bodyLock = () => {
-//   const body = document.body;
-//   if(open = !open) {
-//     body.classList.toggle('overflow-y-hidden');
-//      body.classList.toggle('h-[100vh]');
-//   }
-// }
-// onMounted(() => {
-//   bodyLock
-// })
 
-// return {
-//   bodyLock, open
-// }
 
 </script>
 
