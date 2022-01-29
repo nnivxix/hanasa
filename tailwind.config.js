@@ -4,7 +4,11 @@ module.exports = {
     "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'spiral': "url('src/assets/line_spiral.svg')"
+      }
+    },
   },
   plugins: [],
 }
