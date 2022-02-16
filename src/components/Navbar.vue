@@ -23,10 +23,22 @@ import { mapMutations, mapState } from "vuex";
 
 export default {
   computed:{
-    ...mapState(['open'])
+    ...mapState({
+      open : state => state.open
+    })
   },
   methods: {
     ...mapMutations(['isOpen']),
+    openNav(){
+      if(this.$store.state.open) {
+        document.body.style.overflowY = 'hidden';
+      } else{
+        document.body.style.overflowY = 'scroll';
+      }
+    },
+  },
+  updated() {
+    this.openNav();
   }
 };
 </script>
