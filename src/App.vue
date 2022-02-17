@@ -7,6 +7,7 @@ import Hero from './components/Hero.vue';
 import { computed } from 'vue';
 // import {  } from '@vue/runtime-core';
 import { useStore } from 'vuex';
+import Portfolio from './components/Portfolio.vue';
 
 const store = useStore();
 const open = computed(() => store.state.open );
@@ -17,6 +18,7 @@ const open = computed(() => store.state.open );
 <template>
     <Navbar />
     <Hero />
+    <Portfolio />
     
     <img alt="Vue logo" src="./assets/logo.png" />
     <h1 class="text-3xl font-bold underline">
