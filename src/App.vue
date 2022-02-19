@@ -8,6 +8,7 @@ import { computed } from 'vue';
 // import {  } from '@vue/runtime-core';
 import { useStore } from 'vuex';
 import Portfolio from './components/Portfolio.vue';
+import Skills from './components/Skills.vue';
 
 const store = useStore();
 const open = computed(() => store.state.open );
@@ -19,7 +20,7 @@ const open = computed(() => store.state.open );
     <Navbar />
     <Hero />
     <Portfolio />
-    
+    <Skills />
     <img alt="Vue logo" src="./assets/logo.png" />
     <h1 class="text-3xl font-bold underline">
       Hello world!

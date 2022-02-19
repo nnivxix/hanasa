@@ -3,12 +3,12 @@
     <section class="flex lg:order-last lg:pr-11">
       <img src="../assets/profile.jpeg" width="auto" alt="profile hanasa" srcset=""
       class="w-4/6 lg:w-[400px] md:w-[350px] h-max object-cover">
-      <span class="hidden lg:block bg-gr bg-gradient-to-r from-[#0077B6] to-[#613DC1] absolute animate-[spin_12s_ease-in-out_infinite] hover:animate-none -z-10 lg:w-[400px] lg:h-[400px]"></span>
+      <span class="hidden lg:block bg-gr bg-gradient-to-r from-[#0077B6] to-[#613DC1] absolute animate-[spin_17s_ease-in-out_infinite] hover:animate-none -z-10 lg:w-[400px] lg:h-[400px]"></span>
     </section>
   
     <section class="w-full">
       <h1 class="text-3xl font-normal pt-4 lg:text-6xl ">Hi, You can call him 
-      <span class="font-bold text-transparent bg-clip-text bg-gradient-to-br  from-[#0077B6] to-[#613DC1] ">Hanasa.</span>
+        <span class="font-bold text-transparent bg-clip-text bg-gradient-to-br  from-[#0077B6] to-[#613DC1] ">Hanasa.</span>
       </h1>
       <h2 class="text-xl lg:text-4xl pt-4 lg:w-9/12">A man <i>shifting-shape</i> from graphic designer to front-end web developer.</h2>
       <a href="#" class="underline flex items-center pt-4 "><img src="../assets/pdf_dark.svg" alt="pdf"><span class="text-base lg:text-2xl"> view his resume. </span></a>
