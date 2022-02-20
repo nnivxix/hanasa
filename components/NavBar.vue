@@ -1,43 +1,55 @@
 <template>
-	<nav class="grid grid-cols-3 gap-4 md:h-20 py-3 md:py-5 ">
-		<nuxt-link to="/" class="flex items-center pl-7">
-			<img src="logo.svg" alt="logo hanasa" class="h-7">
-			<h1 class="text-xl font-medium md:text-2xl pl-3 hidden md:block text-hanasa-blue-primary">Hanasa</h1>
-		</nuxt-link>
+  <nav class="block md:flex md:w-full md:justify-between bg-[#f5f5f5] lg:px-11">
+    <div aria-label="logo" class="logo bg-[#f5f5f5] pl-6 md:pl-6 py-3 md:py-4 shadow-md md:shadow-none self-center" @click="isOpen">
+      <img src="assets-nuxt/logo_primary.svg" alt="logo nnivxix" srcset="" >
+    </div>
+    <div class="fixed h-[100vh] w-full bg-[#f5f5f5] flex flex-row items-end translate-x-[-100%] z-10 mt-[-75px] md:mt-0 md:translate-x-[0%] md:static md:h-auto  md:flex-column md:justify-end md:pr-6 md:self-center" :class="{'translate-x-[-0%]' : open}">
+      <ul class="md:pb-0 block md:flex mr-[-13px] text-[#575757] ">
+        <li class="text-5xl md:text-lg font-bold py-5 md:py-3 md:m-0 px-5  ">About</li>
+        <li class="text-5xl md:text-lg font-bold py-5 md:py-3 md:m-0 px-5  ">Work</li>
+        <nuxt-link to="/blogs" class="text-5xl md:text-lg font-bold py-5 md:py-3 md:m-0 px-5  ">Blog <span class="text-xl md:hidden font-normal italic">(coming soon)</span></nuxt-link>
+        <li class="text-5xl md:text-lg font-bold py-5 md:py-3 md:m-0 px-5  ">Contact</li>
+        <li class="text-5xl md:text-lg font-bold py-5 md:py-3 md:m-0 px-5   cursor-pointer md:hidden" aria-label="button" @click.prevent="isOpen" ><span class="material-icons text-7xl font-bold">close</span></li>
+      </ul>
+    </div>
+    <button class="fixed bottom-0 mb-12 ml-4  bg-[#f7f7f7] rounded-full p-5 shadow-md md:hidden z-[9]" >
 
-		<ul class=" pr-7 md:block order-last col-span-3 md:col-span-2 md:justify-self-end md:self-center transition ease-in "
-		:class="[toggle ? 'inline-grid' : 'hidden']">
-			<li class="list-none pl-7 py-3 text-left inline"><NuxtLink class="no-underline text-hanasa-blue-primary font-semibold text-xl md:text-2xl" to="/about">About</NuxtLink></li>
-			<li class="list-none pl-7 py-3 text-left inline"><NuxtLink class="no-underline text-hanasa-blue-primary font-semibold text-xl md:text-2xl" to="/blog">Blog</NuxtLink></li>
-			<li class="list-none pl-7 py-3 text-left inline"><NuxtLink class="no-underline text-hanasa-blue-primary font-semibold text-xl md:text-2xl" to="/work">Work</NuxtLink></li>
-			<li class="list-none pl-4 md:pl-7 py-3 text-left inline"><NuxtLink class="no-underline text-white rounded-xl px-4 py-2 bg-hanasa-blue-primary font-semibold text-xl md:text-2xl" to="/contact">Contact</NuxtLink></li>
-		</ul>
-		<button class="pr-7 md:hidden col-span-2 justify-self-end " @click="openToggle()">
-			<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#1C6DD0" class="bi bi-list " viewBox="0 0 16 16">
-				<path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-			</svg>
-		</button>
-
-
-	</nav>
+      <img src="assets-nuxt/humberger.svg" alt="" @click.prevent="isOpen">
+    </button>
+  </nav>
 </template>
 
 <script>
+import { mapMutations, mapState } from "vuex";
 
-export default{
-	data: () => ({
-		toggle: false,
-	}),
-	methods: {
-		openToggle() {
-			this.toggle = !this.toggle;
-		}
-	}
-
-
+export default {
+  computed:{
+    ...mapState({
+      open : state => state.open
+    })
+  },
+  methods: {
+    ...mapMutations(['isOpen']),
+    openNav(){
+      if(this.$store.state.open) {
+        document.body.style.overflowY = 'hidden';
+      } else{
+        document.body.style.overflowY = 'scroll';
+      }
+    },
+  },
 };
 </script>
-
 <style>
+.logo img{
+  width: 25px;
+}
+
+button{
+  background: transparent;
+  border: none;
+  cursor: pointer;
+
+}
 
 </style>
