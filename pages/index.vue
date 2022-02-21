@@ -4,6 +4,7 @@
 		<Hero />
 		<Portfolio />
 		<Skills/>
+		<TheForm />
 		<Footer/>
 	</div>
 

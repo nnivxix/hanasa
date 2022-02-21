@@ -16,4 +16,7 @@ export const mutations = {
 			document.body.style.overflowY = 'scroll';
 		}
 	},
+	closeNav(state) {
+		return state.open = false;
+	}
 };
