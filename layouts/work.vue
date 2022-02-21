@@ -1,7 +1,7 @@
 <template>
 	<div class="bg-gray-200">
 		<NavBar/>
-		<h1 class="text-center text-xl font-bold md:text-4xl pt-12 text-gray-800">Welcome to my Blog</h1>
+		<h1 class="text-center text-2xl font-bold md:text-6xl pt-12 text-gray-800">Here is my selected works</h1>
 		<nuxt />
 		<Footer />
 	</div>

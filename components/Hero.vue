@@ -10,7 +10,7 @@
       <h1 class="text-3xl font-normal pt-4 lg:text-6xl ">Hi, You can call him
         <span class="font-bold text-transparent bg-clip-text bg-gradient-to-br  from-[#0077B6] to-[#613DC1] ">Hanasa.</span>
       </h1>
-      <h2 class="text-xl lg:text-4xl pt-4 lg:w-9/12">A man <i>shifting-shape</i> from graphic designer to front-end web developer.</h2>
+      <h2 class="text-xl lg:text-4xl pt-4 lg:w-2/4">A man <i>shifting-shape</i> from graphic designer to front-end web developer.</h2>
       <a href="#" class="underline flex items-center pt-4 "><img src="assets-nuxt/pdf_dark.svg" alt="pdf"><span class="text-base lg:text-2xl"> view his resume. </span></a>
       <p class="pt-4 lg:text-2xl">His current stacks :</p>
       <ul class="flex pt-2">
