@@ -8,8 +8,22 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { hid: 'description', name: 'description', content: 'A man shifting-shape from graphic designer to front-end web developer.' },
+      { name: 'format-detection', content: 'telephone=no' },
+			//facebook or OpenGraph
+			{ property: 'og:type', content: 'website'},
+			{ property: 'og:url', content: 'https://hansoflast.com'},
+			{ property: 'og:title', content: 'Hanasa' },
+			{ property: 'og:description', content: 'A man shifting-shape from graphic designer to front-end web developer.'},
+			{ property: 'og:image', content:'meta-img.png'},
+			//Twitter
+			{ property: 'twitter:card', content:'summary_large_image'},
+			{ property: 'twitter:url', content: 'https://hansoflast.com'},
+			{ property: 'twitter:title', content: 'Hanasa' },
+			{ property: 'twitter:description', content: 'A man shifting-shape from graphic designer to front-end web developer.'},
+			{ property: 'twitter:image', content:'meta-img.png'},
+
+
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
