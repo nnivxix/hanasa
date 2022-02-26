@@ -15,13 +15,13 @@ export default {
 			{ property: 'og:url', content: 'https://hansoflast.com'},
 			{ property: 'og:title', content: 'Hanasa' },
 			{ property: 'og:description', content: 'A man shifting-shape from graphic designer to front-end web developer.'},
-			{ property: 'og:image', content:'meta-img.png'},
+			{ property: 'og:image', content:'/meta-img.png'},
 			//Twitter
 			{ property: 'twitter:card', content:'summary_large_image'},
 			{ property: 'twitter:url', content: 'https://hansoflast.com'},
 			{ property: 'twitter:title', content: 'Hanasa' },
 			{ property: 'twitter:description', content: 'A man shifting-shape from graphic designer to front-end web developer.'},
-			{ property: 'twitter:image', content:'meta-img.png'},
+			{ property: 'twitter:image', content:'/meta-img.png'},
 
 
     ],
