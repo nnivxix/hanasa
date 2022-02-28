@@ -17,17 +17,17 @@ export default {
 		socials: [
 			{
 				name: 'github',
-				src: 'assets-nuxt/gh.svg',
+				src: '/assets-nuxt/gh.svg',
 				url: 'https://github.com/nnivxix'
 			},
 			{
 				name: 'linkedin',
-				src: 'assets-nuxt/lin.svg',
+				src: '/assets-nuxt/lin.svg',
 				url: 'https://linkedin.com/in/nnivxix'
 			},
 			{
 				name: 'twitter',
-				src: 'assets-nuxt/tw.svg',
+				src: '/assets-nuxt/tw.svg',
 				url: 'https://twitter.com/nnivxix'
 			}
 		]

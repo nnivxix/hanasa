@@ -25,7 +25,7 @@ export default {
 				img: 'assets-nuxt/img-port/klp.png',
 				desc: 'Save time to create a group with kelapp, kelapp is a tool to create a group of randomized participants.',
 				tags: ['vue', 'ChakraUI'],
-				link: '/work/klp',
+				link: '/work/kelapp',
 			},
 			{
 				id: 3,
